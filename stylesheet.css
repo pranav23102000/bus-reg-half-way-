@@ -1,0 +1,368 @@
+
+    .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border:1px solid azure;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: tranparent;
+    position: relative;
+    cursor: pointer;
+        text-align: center;
+    
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #eaeee4;
+}
+.header{
+     min-height: 100vh;
+     width:100%;
+     background-image:url(HOME1.jpg);
+    
+    background-position: left;
+    background-size: cover;
+    position: relative;
+    animation: scale 7s;
+    
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav_links{
+    flex: 1;
+    text-align:right;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav_links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+}
+.nav_links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+} 
+.text-box p{
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0 40px;
+}
+.text-box h1{
+    font-size: 45px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border:1px solid azure;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: tranparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding 10px;
+    
+    
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+      
+}
+.course-col{
+    flex-basis: 31%;
+    background: #FED9C1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+     
+}
+
+h3{
+    text-align: centre;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem 20rem 5rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+  width: 80%;
+}
+
+.card {
+  width: 37rem;
+  height: 45rem;
+  
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card-img-wrapper {
+  width: 88%;
+  height: 90%;
+
+  border-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
+  opacity: 0.5;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.card:hover .card-info {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-info h2 {
+  font-family: "Baloo Da 2", serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  color: #eee;
+}
+
+.card-info h3 {
+  font-family: "Muli", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a52a2a;
+  margin-bottom: 1rem;
+}
+
+.card-info p {
+  font-family: "Baloo da 2", serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  color: #000;
+  width: 40%;
+    height: 40%;
+  margin-bottom: 2rem;
+}
+
+.card-info button {
+  width: 10rem;
+  height: 3rem;
+  background-color: #c29525;
+  border: none;
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #eee;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+.campus{
+     width: 80%;
+    margin: AUTO;
+    text-align: center;
+    padding-top: 50PX;
+}
+.campus-col img{
+    width: 800px;
+    height: 500px;
+    transition: 0.7s;
+}
+.campus-col img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    
+}
+.h5 h1{
+font-style: oblique;
+    margin-left: 70px;
+}
+.h5 p{
+    text-align: center;
+}
+.section-header{
+     
+}
+footer{
+width: 100%;
+ position: bottom;
+    bottom: 0;
+    background: linear-gradient(to right,#2c3e50,#bdc3c7);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+footer p{
+     color: #fff;
+    
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.col{
+     flex-basis: 25%;
+    padding: 10px;
+}
+.col p{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.col a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.col  h3{
+    font-size: 30px;
+}
+.col het{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.het p{
+    font-size: 30px;
+    
+}
+.col fet{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.loca  img {
+    height: 220px;
+    width: 400px;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 60px;
+}
+.loca p{margin-right: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+.copyright {
+text-align: center;
+font-size: 20px;
+margin-top: 10px;
+}
+#preloader{
+    background: #fff url(load.gif) no-repeat center center;
+    background-size: 45%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
